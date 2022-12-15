@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9783E92-3FCB-4C1F-8177-3F64A3A3BC59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core</RootNamespace>
+    <AssemblyName>Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SQLITE_DEBUG TRUE WIN32 _MSC_VER NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_HAS_CODEC SQLITE_MEM_POOL SQLITE_MUTEX_W32 SQLITE_THREADSAFE SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC  VDBE_PROFILE_OFF </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
+    <NoWarn>0168 ; 0169; 0414; 0618; 0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;TRUE WIN32 _MSC_VER NDEBUG NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_ENABLE_OVERSIZE_CELL_CHECK SQLITE_MUTEX_OMIT SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC VDBE_PROFILE_OFF </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0168 ; 0169; 0414; 0618; 0649</NoWarn>
+    <DocumentationFile>bin\Release\Core.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SQLITE_DEBUG TRUE WIN32 _MSC_VER NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_HAS_CODEC SQLITE_MEM_POOL SQLITE_MUTEX_W32 SQLITE_THREADSAFE SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC  VDBE_PROFILE_OFF </DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>0168 ; 0169; 0414; 0618; 0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;TRUE WIN32 _MSC_VER NDEBUG NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_ENABLE_OVERSIZE_CELL_CHECK SQLITE_MUTEX_OMIT SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC VDBE_PROFILE_OFF </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>0168 ; 0169; 0414; 0618; 0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SQLITE_DEBUG TRUE WIN32 _MSC_VER NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_HAS_CODEC SQLITE_MEM_POOL SQLITE_MUTEX_W32 SQLITE_THREADSAFE SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC  VDBE_PROFILE_OFF </DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>0168 ; 0169; 0414; 0618; 0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;TRUE WIN32 _MSC_VER NDEBUG NO_TCL SQLITE_ASCII SQLITE_DISABLE_LFS SQLITE_ENABLE_OVERSIZE_CELL_CHECK SQLITE_MUTEX_OMIT SQLITE_OMIT_AUTHORIZATION SQLITE_OMIT_DEPRECATED SQLITE_OMIT_GET_TABLE SQLITE_OMIT_INCRBLOB SQLITE_OMIT_LOOKASIDE SQLITE_OMIT_SHARED_CACHE SQLITE_OMIT_UTF16 SQLITE_OMIT_WAL SQLITE_OS_WIN SQLITE_SYSTEM_MALLOC VDBE_PROFILE_OFF </DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>0168 ; 0169; 0414; 0618; 0649</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Core.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="INI.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLite\Client\SqliteClientFactory.cs" />
+    <Compile Include="SQLite\Client\SqliteCommand.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SQLite\Client\SqliteCommandBuilder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SQLite\Client\SqliteConnection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SQLite\Client\SqliteConnectionStringBuilder.cs" />
+    <Compile Include="SQLite\Client\SqliteDataAdapter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SQLite\Client\SqliteDataReader.cs" />
+    <Compile Include="SQLite\Client\SqliteDataSourceEnumerator.cs" />
+    <Compile Include="SQLite\Client\SqliteError.cs" />
+    <Compile Include="SQLite\Client\SqliteExceptions.cs" />
+    <Compile Include="SQLite\Client\SqliteParameter.cs" />
+    <Compile Include="SQLite\Client\SqliteParameterCollection.cs" />
+    <Compile Include="SQLite\Client\SqliteRowUpdatedEventArgs.cs" />
+    <Compile Include="SQLite\Client\SqliteRowUpdatedEventHandler.cs" />
+    <Compile Include="SQLite\Client\SqliteRowUpdatingEventArgs.cs" />
+    <Compile Include="SQLite\Client\SqliteRowUpdatingEventHandler.cs" />
+    <Compile Include="SQLite\Client\SqliteTransaction.cs" />
+    <Compile Include="SQLite\TableChild.cs" />
+    <Compile Include="SQLite\TableColumn.cs" />
+    <Compile Include="SQLite\Connection.cs" />
+    <Compile Include="SQLite\Core\alter_c.cs" />
+    <Compile Include="SQLite\Core\analyze_c.cs" />
+    <Compile Include="SQLite\Core\attach_c.cs" />
+    <Compile Include="SQLite\Core\auth_c.cs" />
+    <Compile Include="SQLite\Core\backup_c.cs" />
+    <Compile Include="SQLite\Core\bitvec_c.cs" />
+    <Compile Include="SQLite\Core\btmutex_c.cs" />
+    <Compile Include="SQLite\Core\BtreeInt_h.cs" />
+    <Compile Include="SQLite\Core\btree_c.cs" />
+    <Compile Include="SQLite\Core\Btree_h.cs" />
+    <Compile Include="SQLite\Core\build_c.cs" />
+    <Compile Include="SQLite\Core\callback_c.cs" />
+    <Compile Include="SQLite\Core\complete_c.cs" />
+    <Compile Include="SQLite\Core\crypto.cs" />
+    <Compile Include="SQLite\Core\ctime_c.cs" />
+    <Compile Include="SQLite\Core\date_c.cs" />
+    <Compile Include="SQLite\Core\Delegates.cs" />
+    <Compile Include="SQLite\Core\delete_c.cs" />
+    <Compile Include="SQLite\Core\expr_c.cs" />
+    <Compile Include="SQLite\Core\fault_c.cs" />
+    <Compile Include="SQLite\Core\fkey_c.cs" />
+    <Compile Include="SQLite\Core\func_c.cs" />
+    <Compile Include="SQLite\Core\global_c.cs" />
+    <Compile Include="SQLite\Core\hash_c.cs" />
+    <Compile Include="SQLite\Core\Hash_h.cs" />
+    <Compile Include="SQLite\Core\hwtime_c.cs" />
+    <Compile Include="SQLite\Core\insert_c.cs" />
+    <Compile Include="SQLite\Core\journal_c.cs" />
+    <Compile Include="SQLite\Core\keywordhash_h.cs" />
+    <Compile Include="SQLite\Core\legacy_c.cs" />
+    <Compile Include="SQLite\Core\loadext_c.cs" />
+    <Compile Include="SQLite\Core\main_c.cs" />
+    <Compile Include="SQLite\Core\malloc_c.cs" />
+    <Compile Include="SQLite\Core\memjournal_c.cs" />
+    <Compile Include="SQLite\Core\mem_Pool.cs" />
+    <Compile Include="SQLite\Core\mutex_c.cs" />
+    <Compile Include="SQLite\Core\mutex_h.cs" />
+    <Compile Include="SQLite\Core\mutex_noop_c.cs" />
+    <Compile Include="SQLite\Core\mutex_w32.cs" />
+    <Compile Include="SQLite\Core\notify_c.cs" />
+    <Compile Include="SQLite\Core\opcodes_c.cs" />
+    <Compile Include="SQLite\Core\opcodes_h.cs" />
+    <Compile Include="SQLite\Core\os_c.cs" />
+    <Compile Include="SQLite\Core\os_common_h.cs" />
+    <Compile Include="SQLite\Core\os_h.cs" />
+    <Compile Include="SQLite\Core\os_win_c.cs" />
+    <Compile Include="SQLite\Core\pager_c.cs" />
+    <Compile Include="SQLite\Core\pager_h.cs" />
+    <Compile Include="SQLite\Core\parse_c.cs" />
+    <Compile Include="SQLite\Core\parse_h.cs" />
+    <Compile Include="SQLite\Core\pcache1_c.cs" />
+    <Compile Include="SQLite\Core\pcache_c.cs" />
+    <Compile Include="SQLite\Core\pcache_h.cs" />
+    <Compile Include="SQLite\Core\pragma_c.cs" />
+    <Compile Include="SQLite\Core\prepare_c.cs" />
+    <Compile Include="SQLite\Core\printf_c.cs" />
+    <Compile Include="SQLite\Core\random_c.cs" />
+    <Compile Include="SQLite\Core\resolve_c.cs" />
+    <Compile Include="SQLite\Core\rowset_c.cs" />
+    <Compile Include="SQLite\Core\select_c.cs" />
+    <Compile Include="SQLite\Core\sqlite3_h.cs" />
+    <Compile Include="SQLite\Core\sqliteInt_h.cs" />
+    <Compile Include="SQLite\Core\sqliteLimit_h.cs" />
+    <Compile Include="SQLite\Core\status_c.cs" />
+    <Compile Include="SQLite\Core\table_c.cs" />
+    <Compile Include="SQLite\Core\tokenize_c.cs" />
+    <Compile Include="SQLite\Core\trigger_c.cs" />
+    <Compile Include="SQLite\Core\update_c.cs" />
+    <Compile Include="SQLite\Core\utf_c.cs" />
+    <Compile Include="SQLite\Core\util_c.cs" />
+    <Compile Include="SQLite\Core\vacuum_c.cs" />
+    <Compile Include="SQLite\Core\vdbeapi_c.cs" />
+    <Compile Include="SQLite\Core\vdbeaux_c.cs" />
+    <Compile Include="SQLite\Core\vdbeblob_c.cs" />
+    <Compile Include="SQLite\Core\VdbeInt_h.cs" />
+    <Compile Include="SQLite\Core\vdbemem_c.cs" />
+    <Compile Include="SQLite\Core\vdbetrace_c.cs" />
+    <Compile Include="SQLite\Core\vdbe_c.cs" />
+    <Compile Include="SQLite\Core\Vdbe_h.cs" />
+    <Compile Include="SQLite\Core\vtab_c.cs" />
+    <Compile Include="SQLite\Core\walker_c.cs" />
+    <Compile Include="SQLite\Core\wal_c.cs" />
+    <Compile Include="SQLite\Core\wal_h.cs" />
+    <Compile Include="SQLite\Core\where_c.cs" />
+    <Compile Include="SQLite\Core\_Custom.cs" />
+    <Compile Include="SQLite\Table.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
